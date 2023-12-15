@@ -1,0 +1,849 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(93, 0, 0, 0.2) inset;
+  background-color: #000000;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #b7001f, #2f0000);
+}
+
+.head {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.head .tag {
+  width: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+.head .tag a {
+  text-decoration: none;
+  color: white;
+}
+.head .vectors {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.show {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.show .backgroundText {
+  position: absolute;
+  top: 17%;
+  left: 8%;
+}
+.show .productShow {
+  width: 200vh;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: space-around;
+}
+.show .productShow .productText {
+  width: 60vh;
+}
+.show .productShow .productText button {
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 120px;
+  height: 35px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+.show .productShow .productText .txt1 {
+  color: white;
+  font-size: 50px;
+}
+.show .productShow .productText .productPrice {
+  width: 48vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.show .productShow .productText .productPrice .productPrice1 {
+  width: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.show .productShow .productText .productPrice .txt2 {
+  color: white;
+  font-size: 40px;
+}
+.show .productShow .productText .productPrice .txt3 {
+  color: white;
+  font-size: 16px;
+}
+.show .productShow .productText .productPrice .txt4 {
+  color: white;
+  font-size: 40px;
+}
+
+.fastShow {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fastShow .fastPr {
+  width: 40vh;
+  height: 100%;
+  position: relative;
+}
+.fastShow .fastPr .fastProduct_1 {
+  width: 40vh;
+  height: 90%;
+  border: 2px solid white;
+  border-bottom: none;
+}
+.fastShow .fastPr .fastProduct_1 img {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+}
+.fastShow .fastPr .fastProduct_1 p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 52px;
+  left: 20px;
+}
+.fastShow .fastProduct_2 {
+  width: 40vh;
+  height: 90%;
+  border: 2px solid white;
+  border-bottom: none;
+}
+.fastShow .fastProduct_2 img {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+}
+.fastShow .fastProduct_2 p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 52px;
+  left: 20px;
+}
+.fastShow .fastProduct_3 {
+  width: 40vh;
+  height: 90%;
+  border: 2px solid white;
+  border-bottom: none;
+}
+.fastShow .fastProduct_3 img {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+}
+.fastShow .fastProduct_3 p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 52px;
+  left: 20px;
+}
+.fastShow .fastButton {
+  display: flex;
+  width: 30vh;
+  justify-content: space-around;
+}
+.fastShow .fastButton button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.label {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+.label .lableImg_1 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../image/Rectangle\ 6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.label .lableImg_1 div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.label .lableImg_1 div img {
+  position: relative;
+  top: 30%;
+  z-index: 1;
+}
+.label .lableImg_2 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../image/Rectangle\ 5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.label .lableImg_2 div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.label .lableImg_2 div img {
+  top: 20px;
+  position: relative;
+  z-index: 5;
+}
+
+.title {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  display: flex;
+}
+.title .titleTxt {
+  width: 80vh;
+  position: absolute;
+  left: 31%;
+}
+.title .titleTxt p {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+.title .titleTxt .titleImg_1 {
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+.title .titleTxt .titleImg_2 {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+}
+.title .titleTxt_2 {
+  position: absolute;
+  top: 300px;
+  left: 14%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title .titleTxt_2 p {
+  width: 150vh;
+  line-height: 40px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+.title .titleTxt_2 button {
+  width: 25vh;
+  height: 40px;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.seller {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.seller p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.seller p:hover {
+  color: red;
+  transition: 2s;
+}
+.seller .sellerImg {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sportTime {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sportTime img {
+  width: 50vh;
+  text-align: center;
+}
+.sportTime .SportShow {
+  width: 150vh;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+.sportTime .SportShow .sportShow_1 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.sportTime .SportShow .sportShow_1 div {
+  width: 35vh;
+}
+.sportTime .SportShow .sportShow_1 img {
+  width: 35vh;
+}
+.sportTime .SportShow .sportShow_2 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.sportTime .SportShow .sportShow_2 div {
+  width: 35vh;
+}
+.sportTime .SportShow .sportShow_2 img {
+  width: 35vh;
+}
+.sportTime .SportShow .sportShow_3 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.sportTime .SportShow .sportShow_3 div {
+  width: 35vh;
+}
+.sportTime .SportShow .sportShow_3 img {
+  width: 35vh;
+}
+.sportTime button {
+  border: 1px solid white;
+  width: 30vh;
+  height: 50px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+}
+
+.designShow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.designShow .designText {
+  width: 70vh;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.designShow .designText .text1 {
+  color: white;
+  font-size: 60px;
+}
+.designShow .designText .text2 {
+  color: white;
+  font-size: 20px;
+}
+.designShow button {
+  width: 15vh;
+  height: 40px;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-size: 16px;
+}
+
+.NikeStyles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.NikeStyles .nikesProduct {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.NikeStyles .nikesProduct .block {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+.NikeStyles .nikesProduct .block .div {
+  display: flex;
+  justify-content: space-between;
+}
+.NikeStyles .nikesProduct .block span {
+  color: #ba0000;
+}
+.NikeStyles .nikesProduct .block h2 {
+  color: white;
+}
+.NikeStyles .nikesProduct .block .klor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(from 180deg at 50% 50%, #f00 0deg, rgba(255, 0, 0, 0) 360deg);
+  background-blend-mode: luminosity;
+  filter: blur(50px);
+  z-index: -1;
+}
+
+.logos {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bestShoes {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+.bestShoes .bestText {
+  width: 70vh;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bestShoes .bestText .btxt1 {
+  color: white;
+  font-size: 60px;
+}
+.bestShoes .bestText .btxt2 {
+  color: white;
+  font-size: 20px;
+}
+.bestShoes button {
+  width: 15vh;
+  height: 40px;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-size: 16px;
+}
+.bestShoes .bestPhotos {
+  width: 100vh;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.bestShoes .bestPhotos .BPhoto_1 {
+  width: 30vh;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+.bestShoes .bestPhotos .B_div {
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.bestShoes .bestPhotos .B_div .BPhoto_3 {
+  width: 30vh;
+  height: 250px;
+}
+.bestShoes .bestPhotos .BPhoto_2 {
+  width: 50vh;
+  height: 150px;
+}
+
+.clear_example {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.clear_example .example_text {
+  width: 80vh;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.clear_example .example_text .e_txt1 {
+  color: white;
+  font-size: 50px;
+}
+.clear_example .example_text .e_txt2 {
+  color: white;
+  font-size: 17px;
+}
+.clear_example .example_text .e_txt3 {
+  color: white;
+  font-size: 17px;
+}
+.clear_example .example_text .e_txt4 {
+  color: white;
+  font-size: 17px;
+}
+.clear_example .example_text .e_txt5 {
+  color: white;
+  font-size: 17px;
+}
+.clear_example button {
+  width: 15vh;
+  height: 40px;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-size: 16px;
+}
+
+.join {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.join .Join_img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.join .nikeClub {
+  width: 80%;
+  height: 300px;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.join .nikeClub .Logo_img {
+  width: 200px;
+  height: 100px;
+}
+.join .nikeClub .club_textes {
+  width: 70%;
+  line-height: 50px;
+}
+.join .nikeClub .club_textes .c_txt1 {
+  color: white;
+  font-size: 45px;
+}
+.join .nikeClub .club_textes .c_txt2 {
+  color: white;
+  font-size: 20px;
+}
+.join .nikeClub .club_textes button {
+  width: 120px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.ffsr {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ffsr .delivery {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.ffsr .delivery img {
+  width: 20px;
+  height: 20px;
+}
+.ffsr .delivery .d_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ffsr .delivery .d_txt span {
+  color: white;
+}
+.ffsr .delivery .d_txt p {
+  color: rgb(198, 198, 198);
+  font-weight: 100;
+}
+.ffsr .Withdrawal {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.ffsr .Withdrawal img {
+  width: 20px;
+  height: 20px;
+}
+.ffsr .Withdrawal .d_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ffsr .Withdrawal .d_txt span {
+  color: white;
+}
+.ffsr .Withdrawal .d_txt p {
+  color: rgb(198, 198, 198);
+  font-weight: 100;
+}
+.ffsr .secury {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.ffsr .secury img {
+  width: 20px;
+  height: 20px;
+}
+.ffsr .secury .d_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ffsr .secury .d_txt span {
+  color: white;
+}
+.ffsr .secury .d_txt p {
+  color: rgb(198, 198, 198);
+  font-weight: 100;
+}
+.ffsr .returns {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.ffsr .returns img {
+  width: 20px;
+  height: 20px;
+}
+.ffsr .returns .d_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ffsr .returns .d_txt span {
+  color: white;
+}
+.ffsr .returns .d_txt p {
+  color: rgb(198, 198, 198);
+  font-weight: 100;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+}
+.footer .Services {
+  width: 60%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .Services .block {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .Services .block .help {
+  width: 30%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .Services .block .help span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .Services .block .help p {
+  color: white;
+}
+.footer .Services .block .services_block {
+  width: 80%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .Services .block .services_block .shop {
+  width: 30%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .Services .block .services_block .shop span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .Services .block .services_block .shop p {
+  color: white;
+}
+.footer .Services .block .services_block .our_Services {
+  width: 30%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .Services .block .services_block .our_Services span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .Services .block .services_block .our_Services p {
+  color: white;
+}
+.footer .Services .services_block2 {
+  width: 80%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .Services .services_block2 .Contact {
+  width: 30%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .Services .services_block2 .Contact span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .Services .services_block2 .Contact p {
+  color: white;
+}
+.footer .Services .Enterprise {
+  width: 30%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .Services .Enterprise span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .Services .Enterprise p {
+  color: white;
+}
+.footer .Services .block2 {
+  width: 30%;
+  display: flex;
+}
+.footer .Services .block2 .services_block3 {
+  width: 100%;
+}
+.footer .Services .block2 .services_block3 .help {
+  width: 60%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .Services .block2 .services_block3 .help span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .Services .block2 .services_block3 .help p {
+  color: white;
+}
+.footer .stayTouch {
+  width: 100vh;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .stayTouch img {
+  width: 200px;
+  height: 100px;
+}
+.footer .stayTouch p {
+  color: white;
+  font-size: 40px;
+}
+.footer .stayTouch .stay_inp_but {
+  width: 300px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 30px;
+  display: flex;
+}
+.footer .stayTouch .stay_inp_but input {
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+}
+.footer .stayTouch .stay_inp_but button {
+  width: 200px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */
